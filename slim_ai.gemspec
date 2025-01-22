@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative "lib/slim_a/version"
+require_relative "lib/slim_ai/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "slim_a"
-  spec.version = SlimA::VERSION
+  spec.name = "slim_ai"
+  spec.version = SlimAI::VERSION
   spec.authors = ["tungnt"]
   spec.email = ["tungnguyen120301@gmail.com"]
 
-  spec.summary = "Flat agent things"
-  spec.description = "Flat agent things"
+  spec.summary = "Slim agent things"
+  spec.description = "Slim agent things"
   spec.homepage = "https://github.com/tungnt1203/slim-agent"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency "ruby-openai", "~> 7.3", ">= 7.3.1"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
